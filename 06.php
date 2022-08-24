@@ -1,9 +1,11 @@
 <?php include 'includes/header.php';
 
+// Interface
 interface TransporteInterface{
     public function getInfo() : string;
     public function getRuedas() : int; 
 }
+
 class Transporte implements TransporteInterface {
     public function __construct(protected int $ruedas, protected int $capacidad){
     }
